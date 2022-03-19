@@ -8,6 +8,7 @@
     <link href="https://www.adalab.cn/admission.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="thumbnail.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@waline/client"></script>
 </head>
 
 <body>
@@ -18,22 +19,50 @@
     <main>
         <aside>
             <ul>
-                <a href="bilibili.html">B站视频页</a>
+                <li>
+                    <a href="index.html">主页</a>
+                </li>
+                <br>
+                <li>
+                    <a href="bilibili.html">原神抽卡</a>
+                </li>
+                <br>
+                <li>
+                    <a href="poem.html">词几首</a>
+                </li>
+                <br>
+                <li>
+                    <a href="gamevideo.html">下饭联盟</a>
+                </li>
+                <br>
+                <li>
+                    <a href="essay.html">散文</a>
+                </li>
             </ul>
         </aside>
         <article>
-            <h1>Hello Adalab</h1>
-            <h2>second title</h2>
-            <h3>third title</h3>
-            <p>This is the first page I made at Adalab.</p>
-            <p>
-
-                这是为<a href="https://www.adalab.cn"><img src="https://www.adalab.cn/images/adalab.png"></a>挑战赛制作的网站。
-
-            </p>
-
+            <h1>欢迎来到Moonhalf的个人网站！</h1>
+            <p>这里收录了一些来自<a href="https://space.bilibili.com/176498218">坂本</a>的风雅集萃与有趣的游戏视频（已获授权）！欢迎大家欣赏评论呀！</p>
+            <ul>
+                <li>
+                    <a href="bilibili.html">原神发病抽卡实况 <br>
+                        <img src="https://i1.hdslb.com/bfs/archive/2be46d2a57e79598512ac2a77cc1b38c188311ce.jpg@640w_400h_1c_!web-space-index-myvideo.webp" alt="二命万叶" class="small"></a>
+                </li>
+                <li>
+                    <a href="poem.html">随手题词 <br>
+                        <img src="https://i0.hdslb.com/bfs/article/banner/995de5d6c68cb69bb1a9ee5ac3eaf2f02bc5c185.png" alt="词几首" class="small">
+                    </a>
+                </li>
+            </ul>
         </article>
     </main>
+    <div id="waline"></div>
+    <script>
+        Waline({
+            el: '#waline',
+            serverURL: 'https://comment-6ysu5n2dz-moonhalf-nostar.vercel.app/',
+        });
+    </script>
 
     <footer>
         by &nbsp; <a href="https://www.zhihu.com/people/ming-tian-ni-hao-17-27" target="_blank">Moonhalf-Nostar</a> &nbsp; for &nbsp; <a

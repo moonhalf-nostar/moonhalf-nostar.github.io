@@ -8,6 +8,7 @@
     <link href="https://www.adalab.cn/admission.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="thumbnail.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@waline/client"></script>
 </head>
 
 <body>
@@ -23,6 +24,13 @@
         <article>
         </article>
     </main>
+    <div id="waline"></div>
+    <script>
+        Waline({
+            el: '#waline',
+            serverURL: 'https://comment-6ysu5n2dz-moonhalf-nostar.vercel.app/',
+        });
+    </script>
 
     <footer>
         by &nbsp; <a href="https://www.zhihu.com/people/ming-tian-ni-hao-17-27" target="_blank">Moonhalf-Nostar</a> &nbsp; for &nbsp; <a

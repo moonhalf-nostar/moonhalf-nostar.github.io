@@ -1,11 +1,14 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     // 你的所有代码都应该写在这里
-    let targetImage = document.querySelector("#smart-image");
-    targetImage.addEventListener("click", function() {
-        if (targetImage.classList.contains("small")) {
-            targetImage.classList.remove("small");
-        } else {
-            targetImage.classList.add("small");
-        }
-    })
+    let targetImages = document.querySelectorAll(".small");
+    for (const targetImage of targetImages) {
+        targetImage.addEventListener("mouseover", function() {
+                targetImage.classList.remove("small");
+            }
+        )
+        targetImage.addEventListener("mouseout", function () {
+                targetImage.classList.add("small");
+            }
+        )
+    }
 });

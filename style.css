@@ -10,11 +10,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: auto;
 }
 
 header, footer {
     display: flex;
     justify-content: center;
+    background-color:antiquewhite;
 }
 
 main {
@@ -24,8 +26,17 @@ main {
 
 aside {
     flex: 1;
+    background-color: azure;
 }
 
 article {
     flex: 3;
+}
+
+img.small {
+    width: 300px;
+}
+
+iframe {
+    min-height: 500px;
 }
